@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottie Animation</title>
+    <style>
+        #anim {
+            max-width: 100px;
+            margin: 10% auto;
+        }
+    </style>
+</head>
+<body>
+<div id="anim"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+<script>
+    let animation = bodymovin.loadAnimation({
+        container: document.getElementById('anim'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'checklist.json'
+    });
+</script>
+</body>
+</html>
